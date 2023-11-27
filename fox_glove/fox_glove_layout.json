@@ -47,13 +47,13 @@
       },
       "cameraState": {
         "perspective": true,
-        "distance": 2.70551908557835,
-        "phi": 66.1883980991399,
-        "thetaOffset": -1.7761207521934628,
+        "distance": 1.9888051397316273,
+        "phi": 61.98173508172998,
+        "thetaOffset": 90.16154671669432,
         "targetOffset": [
-          -0.10989132717934655,
-          0.11060708339622068,
-          5.27544909693395e-17
+          0.05903652159172876,
+          0.5805111601084993,
+          -1.3992052860905463e-16
         ],
         "target": [
           0,
@@ -67,14 +67,26 @@
           1
         ],
         "fovy": 45,
-        "near": 0.5,
+        "near": 0.01,
         "far": 5000
       },
       "followMode": "follow-pose",
       "scene": {
-        "syncCamera": false
+        "syncCamera": false,
+        "transforms": {
+          "showLabel": true,
+          "enablePreloading": true,
+          "labelSize": 0.02,
+          "axisScale": 0.6,
+          "lineWidth": 8.1,
+          "lineColor": "#ff4100"
+        }
       },
-      "transforms": {},
+      "transforms": {
+        "frame:camera1_link": {
+          "visible": true
+        }
+      },
       "topics": {},
       "publish": {
         "type": "point",
@@ -86,112 +98,8 @@
         "poseEstimateThetaDeviation": 0.26179939
       },
       "imageMode": {},
-      "foxglovePanelTitle": "Panell"
-    },
-    "map!dbrlx4": {
-      "center": {
-        "lat": 0,
-        "lon": -0.0006866455078125
-      },
-      "customTileUrl": "",
-      "disabledTopics": [],
-      "followTopic": "",
-      "layer": "map",
-      "topicColors": {},
-      "maxNativeZoom": 18
-    },
-    "Image!3mnp456": {
-      "cameraState": {
-        "distance": 20,
-        "perspective": true,
-        "phi": 60,
-        "target": [
-          0,
-          0,
-          0
-        ],
-        "targetOffset": [
-          0,
-          0,
-          0
-        ],
-        "targetOrientation": [
-          0,
-          0,
-          0,
-          1
-        ],
-        "thetaOffset": 45,
-        "fovy": 45,
-        "near": 0.5,
-        "far": 5000
-      },
-      "followMode": "follow-pose",
-      "scene": {},
-      "transforms": {},
-      "topics": {},
-      "layers": {},
-      "publish": {
-        "type": "point",
-        "poseTopic": "/move_base_simple/goal",
-        "pointTopic": "/clicked_point",
-        "poseEstimateTopic": "/initialpose",
-        "poseEstimateXDeviation": 0.5,
-        "poseEstimateYDeviation": 0.5,
-        "poseEstimateThetaDeviation": 0.26179939
-      },
-      "imageMode": {
-        "imageTopic": "/D400/color/image_raw",
-        "calibrationTopic": "/D400/color/camera_info"
-      }
-    },
-    "Image!138yqnn": {
-      "cameraState": {
-        "distance": 20,
-        "perspective": true,
-        "phi": 60,
-        "target": [
-          0,
-          0,
-          0
-        ],
-        "targetOffset": [
-          0,
-          0,
-          0
-        ],
-        "targetOrientation": [
-          0,
-          0,
-          0,
-          1
-        ],
-        "thetaOffset": 45,
-        "fovy": 45,
-        "near": 0.5,
-        "far": 5000
-      },
-      "followMode": "follow-pose",
-      "scene": {},
-      "transforms": {},
-      "topics": {},
-      "layers": {},
-      "publish": {
-        "type": "point",
-        "poseTopic": "/move_base_simple/goal",
-        "pointTopic": "/clicked_point",
-        "poseEstimateTopic": "/initialpose",
-        "poseEstimateXDeviation": 0.5,
-        "poseEstimateYDeviation": 0.5,
-        "poseEstimateThetaDeviation": 0.26179939
-      },
-      "imageMode": {
-        "imageTopic": "/D400/depth/image_rect_raw",
-        "calibrationTopic": "/D400/depth/camera_info",
-        "colorMode": "colormap",
-        "colorMap": "turbo",
-        "minValue": 93.7153
-      }
+      "foxglovePanelTitle": "Panell",
+      "followTf": "map"
     },
     "Gauge!2qk83ul": {
       "path": "/T265/pose/sample.pose.pose.orientation.x",
@@ -200,8 +108,8 @@
       "colorMap": "red-yellow-green",
       "colorMode": "gradient",
       "gradient": [
-        "#0000ff",
-        "#ff00ff"
+        "#c7ff00ff",
+        "#00f3ffff"
       ],
       "reverse": false
     },
@@ -223,6 +131,103 @@
       "diffTopicPath": "/robot_description",
       "showFullMessageForDiff": false,
       "topicPath": "/robot_description"
+    },
+    "3D!1q2o2ql": {
+      "layers": {
+        "845139cb-26bc-40b3-8161-8ab60af4baf5": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "845139cb-26bc-40b3-8161-8ab60af4baf5",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "order": 1
+        },
+        "75a862ed-6f82-4144-9319-d7a46bbd8d07": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "URDF",
+          "instanceId": "75a862ed-6f82-4144-9319-d7a46bbd8d07",
+          "layerId": "foxglove.Urdf",
+          "sourceType": "topic",
+          "url": "",
+          "filePath": "/home/turgay/ros2_ws/src/robot/urdf/rover_robot.urdf",
+          "parameter": "",
+          "topic": "/robot_description",
+          "framePrefix": "",
+          "displayMode": "auto",
+          "fallbackColor": "#ffffff",
+          "order": 2
+        }
+      },
+      "cameraState": {
+        "perspective": true,
+        "distance": 1.705151806676494,
+        "phi": 73.21106646627555,
+        "thetaOffset": -10.021939520897345,
+        "targetOffset": [
+          0.1638644667437395,
+          0.20285601956322336,
+          -9.62736467360945e-18
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.01,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {
+        "syncCamera": false,
+        "transforms": {
+          "showLabel": true,
+          "enablePreloading": true,
+          "labelSize": 0.02,
+          "axisScale": 0.34,
+          "lineWidth": 8.1,
+          "lineColor": "#ff4100"
+        }
+      },
+      "transforms": {
+        "frame:camera1_link": {
+          "visible": true
+        }
+      },
+      "topics": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {},
+      "foxglovePanelTitle": "Panell",
+      "followTf": "base_link"
     }
   },
   "globalVariables": {
@@ -245,22 +250,13 @@
     "second": {
       "first": {
         "first": "3D!18i6zy7",
-        "second": "map!dbrlx4",
-        "direction": "column",
-        "splitPercentage": 77.48538011695906
+        "second": "3D!1q2o2ql",
+        "direction": "column"
       },
       "second": {
         "first": {
-          "first": "Image!3mnp456",
-          "second": {
-            "first": "Image!138yqnn",
-            "second": {
-              "first": "Gauge!2qk83ul",
-              "second": "Gauge!d23wwd",
-              "direction": "row"
-            },
-            "direction": "column"
-          },
+          "first": "Gauge!d23wwd",
+          "second": "Gauge!2qk83ul",
           "direction": "column"
         },
         "second": "RawMessages!os6rgs",
@@ -270,6 +266,6 @@
       "direction": "row",
       "splitPercentage": 70.93398322042923
     },
-    "splitPercentage": 34.40959409594096
+    "splitPercentage": 21.80922525750112
   }
 }
