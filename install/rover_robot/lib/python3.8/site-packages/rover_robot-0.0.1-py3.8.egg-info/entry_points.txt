@@ -1,0 +1,3 @@
+[console_scripts]
+static_robot_tf2_broadcaster = robot.static_robot_tf2_broadcaster:main
+

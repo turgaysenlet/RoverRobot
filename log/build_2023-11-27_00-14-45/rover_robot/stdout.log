@@ -1,0 +1,33 @@
+running egg_info
+writing build/rover_robot/rover_robot.egg-info/PKG-INFO
+writing dependency_links to build/rover_robot/rover_robot.egg-info/dependency_links.txt
+writing entry points to build/rover_robot/rover_robot.egg-info/entry_points.txt
+writing requirements to build/rover_robot/rover_robot.egg-info/requires.txt
+writing top-level names to build/rover_robot/rover_robot.egg-info/top_level.txt
+reading manifest file 'build/rover_robot/rover_robot.egg-info/SOURCES.txt'
+writing manifest file 'build/rover_robot/rover_robot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/turgay/ros2_ws/src/rover_robot/build/rover_robot/build
+creating /home/turgay/ros2_ws/src/rover_robot/build/rover_robot/build/lib
+creating /home/turgay/ros2_ws/src/rover_robot/build/rover_robot/build/lib/rover_robot
+copying rover_robot/static_robot_tf2_broadcaster.py -> /home/turgay/ros2_ws/src/rover_robot/build/rover_robot/build/lib/rover_robot
+copying rover_robot/__init__.py -> /home/turgay/ros2_ws/src/rover_robot/build/rover_robot/build/lib/rover_robot
+running install
+running install_lib
+creating /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/lib/python3.8/site-packages/rover_robot
+copying /home/turgay/ros2_ws/src/rover_robot/build/rover_robot/build/lib/rover_robot/static_robot_tf2_broadcaster.py -> /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/lib/python3.8/site-packages/rover_robot
+copying /home/turgay/ros2_ws/src/rover_robot/build/rover_robot/build/lib/rover_robot/__init__.py -> /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/lib/python3.8/site-packages/rover_robot
+byte-compiling /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/lib/python3.8/site-packages/rover_robot/static_robot_tf2_broadcaster.py to static_robot_tf2_broadcaster.cpython-38.pyc
+byte-compiling /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/lib/python3.8/site-packages/rover_robot/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/share/ament_index
+creating /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/share/ament_index/resource_index
+creating /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/share/ament_index/resource_index/packages
+copying resource/rover_robot -> /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/share/ament_index/resource_index/packages
+copying package.xml -> /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/share/rover_robot
+running install_egg_info
+Copying build/rover_robot/rover_robot.egg-info to /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/lib/python3.8/site-packages/rover_robot-0.0.1-py3.8.egg-info
+running install_scripts
+Installing static_robot_tf2_broadcaster script to /home/turgay/ros2_ws/src/rover_robot/install/rover_robot/lib/robot
+writing list of installed files to '/home/turgay/ros2_ws/src/rover_robot/build/rover_robot/install.log'
