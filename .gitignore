@@ -92,3 +92,10 @@ install/rover_robot/lib/python3.8/site-packages/rover_robot-0.0.1-py3.8.egg-info
 install/rover_robot/lib/python3.8/site-packages/rover_robot-0.0.1-py3.8.egg-info/PKG-INFO
 install/rover_robot/lib/python3.8/site-packages/rover_robot-0.0.1-py3.8.egg-info/entry_points.txt
 install/rover_robot/lib/python3.8/site-packages/rover_robot-0.0.1-py3.8.egg-info/dependency_links.txt
+rover_robot.egg-info/dependency_links.txt
+rover_robot.egg-info/entry_points.txt
+rover_robot.egg-info/PKG-INFO
+rover_robot.egg-info/requires.txt
+rover_robot.egg-info/SOURCES.txt
+rover_robot.egg-info/top_level.txt
+rover_robot.egg-info/zip-safe
